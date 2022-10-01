@@ -1,0 +1,148 @@
+.border {
+  border-width: 1px;
+  border-color: #DCDCDC;
+  border-style: solid;
+  height: 6cm;
+  width: 9cm;
+  display: inline-block;
+}
+
+.item1 {
+  grid-area: season;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.item2 {
+  grid-area: person;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.item3 {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+}
+
+.item4 {
+  grid-area: source;
+  display: flex;
+  flex-direction: row;
+}
+
+.item5 {
+  grid-area: veggies;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 1cm 3cm 1cm 1cm;
+  grid-template-areas:
+    'season person'
+    'main main'
+    'source source'
+    'footer veggies';
+  /*grid-gap: 1px;*/
+  width: 9cm;
+  height: 6cm;
+  /*background-color: #2196F3;*/
+}
+
+.grid-container > div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  align-items: center;
+}
+
+.season {
+  margin-left: 5px;
+  /*width: 4.5cm;
+  height: 1cm;*/
+}
+
+.person {
+  /*width: 4.5cm;
+  height: 1cm;*/
+  font-family: Bradley Hand;
+  font-style: italic;
+  margin-right: 10px;
+}
+
+.main {
+  /*width: 9cm;
+  height: 3cm;*/
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  margin: auto;
+  text-align: center;
+}
+
+.source {
+  /*width: 4.5cm;
+  height: 1cm;*/
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-size: 10px;
+  margin: auto;
+}
+
+.veggies {
+  margin-right: 10px;
+  color: grey;
+}
+
+.circle {
+    float: left;
+    width: 8px;
+    height: 20px;
+    padding: 0px;
+    border-radius: 25px;
+    /*background: red;*/
+    border-style: solid;
+    border-width: 1px;
+    margin: 2px;
+}
+
+.grey {
+  border-color: grey;
+}
+
+.spring {
+  border-color: GoldenRod;
+  /*background: Gold;*/
+}
+
+.summer{
+  border-color: ForestGreen;
+  /*background: YellowGreen;*/
+}
+
+.autumn{
+  border-color: DarkRed;
+  /*background: FireBrick;*/
+}
+
+.winter{
+  border-color: RoyalBlue;
+  /*background: SteelBlue;*/
+}
+
+.text-black {
+  color: black;
+}
+
+.text-grey {
+  color: #DCDCDC
+}
+
+.carrot {
+  float: right;
+  color: grey;
+}
+
+
